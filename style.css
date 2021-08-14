@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-red-color: #e06262;
+}
+
 html {
   font-size: 10px;
 }
@@ -24,17 +28,9 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-family: "Fredoka One", cursive;
+.main-red-color {
+  color: var(--main-red-color);
 }
-
 .container {
   width: 600px;
   height: 600px;
@@ -59,11 +55,13 @@ h6 {
   flex: 1;
   text-align: center;
   font-size: 4rem;
+  font-family: "Fredoka One", sans-serif;
 }
 
 .header-btn {
   font-size: 2rem;
-  font-family: "Oswald", sans-serif;
+  font-family: "Fredoka One", sans-serif;
+  text-transform: uppercase;
   padding: 24px;
   background: unset;
   outline: unset;
