@@ -24,6 +24,17 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Fredoka One", cursive;
+}
+
 .container {
   width: 600px;
   height: 600px;
@@ -35,4 +46,26 @@ html {
 .frame {
   border: 1px solid #484848;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.header-btn {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  padding: 24px;
+  background: unset;
+  outline: unset;
+  border: unset;
 }
